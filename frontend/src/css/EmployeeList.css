@@ -1,0 +1,163 @@
+.employeePage{
+
+    padding:40px;
+    background:#f4f7fb;
+    min-height:100vh;
+
+}
+
+.employeeHeader{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+
+}
+
+.employeeHeader h1{
+
+    color:#16325c;
+    margin-bottom:5px;
+
+}
+
+.employeeHeader p{
+
+    color:#706e6b;
+
+}
+
+.addBtn{
+
+    background:#0176d3;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+
+}
+
+.tableContainer{
+
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+
+}
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+thead{
+
+    background:#f8f9fb;
+
+}
+
+thead th{
+
+    padding:18px;
+    text-align:left;
+    color:#16325c;
+    font-size:15px;
+
+}
+
+tbody td{
+
+    padding:18px;
+    border-top:1px solid #eef1f5;
+
+}
+
+tbody tr:hover{
+
+    background:#f8fbff;
+
+}
+
+.employeeInfo{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+.avatar{
+
+    font-size:48px;
+    color:#0176d3;
+
+}
+
+.employeeInfo h4{
+
+    margin:0;
+    color:#16325c;
+
+}
+
+.employeeInfo span{
+
+    color:#8a8d91;
+    font-size:13px;
+
+}
+
+.department{
+
+    background:#e8f3ff;
+    color:#0176d3;
+    padding:6px 12px;
+    border-radius:8px;
+    font-size:13px;
+    font-weight:600;
+
+}
+
+.completed{
+
+    background:#d8f7e4;
+    color:#2e844a;
+    padding:6px 14px;
+    border-radius:8px;
+    font-size:13px;
+
+}
+
+.progress{
+
+    background:#fff3d7;
+    color:#ff9800;
+    padding:6px 14px;
+    border-radius:8px;
+    font-size:13px;
+
+}
+
+.notstarted{
+
+    background:#dceeff;
+    color:#0176d3;
+    padding:6px 14px;
+    border-radius:8px;
+    font-size:13px;
+
+}
+
+.dots{
+
+    cursor:pointer;
+    color:#706e6b;
+    font-size:18px;
+
+}

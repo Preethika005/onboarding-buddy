@@ -1,0 +1,73 @@
+.statsContainer{
+
+    margin-left:280px;
+
+    margin-right:30px;
+
+    margin-top:25px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.statCard{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.statCard:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.iconCircle{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:25px;
+
+    margin-bottom:20px;
+
+}
+
+.statCard h2{
+
+    font-size:34px;
+
+    color:#333;
+
+}
+
+.statCard p{
+
+    margin-top:10px;
+
+    color:gray;
+
+}

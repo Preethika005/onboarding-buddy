@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.sf-login-page {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    /* background-color: #b9ddf8; */
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sf-login-page * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================================================
+   LEFT PANEL - SYSTEM AUTH FORM
+   ========================================================================== */
+.sf-form-section {
+    width: 45%;
+    min-width: 480px;
+    height: 100%;
+    background-color: #ffffff;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    z-index: 5;
+    box-shadow: 10px 0 30px rgba(3, 45, 96, 0.04);
+}
+
+.sf-form-container {
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sf-logo-wrapper {
+    margin-bottom: 40px;
+}
+
+.sf-main-logo {
+    height: 108px;
+    width: auto;
+    align-items: center;
+    object-fit: contain;
+}
+
+.sf-welcome-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #032d60;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.wave-emoji {
+    display: inline-block;
+}
+
+.sf-welcome-subtitle {
+    font-size: 15px;
+    color: #686b6d;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+
+/* Form Input Configurations */
+.sf-actual-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sf-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sf-input-wrapper label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #032d60;
+}
+
+.sf-input-field-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sf-input-field-container input {
+    width: 100%;
+    height: 48px;
+    background-color: #ffffff;
+    border: 1.5px solid #dddbda;
+    border-radius: 10px;
+    padding: 0 45px;
+    font-size: 15px;
+    color: #032d60;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.sf-input-field-container input::placeholder {
+    color: #969492;
+}
+
+.sf-input-field-container input:focus {
+    border-color: #0176d3;
+    box-shadow: 0 0 0 3px rgba(1, 118, 211, 0.15);
+}
+
+/* Icons styling inside forms */
+.sf-input-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    color: #969492;
+    pointer-events: none;
+}
+
+.sf-input-icon.icon-left {
+    left: 16px;
+}
+
+.sf-password-toggle {
+    position: absolute;
+    right: 14px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.sf-password-toggle .sf-input-icon.icon-right {
+    position: static;
+    pointer-events: auto;
+}
+
+/* Remember Me & Help Navigation Anchors */
+.sf-form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+.sf-checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #444444;
+    cursor: pointer;
+    user-select: none;
+}
+
+.sf-checkbox-label input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #0176d3;
+    cursor: pointer;
+}
+
+.sf-forgot-link {
+    color: #0176d3;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sf-forgot-link:hover {
+    text-decoration: underline;
+}
+
+/* Action Button Details */
+.sf-submit-btn {
+    width: 100%;
+    height: 48px;
+    background-color: #0176d3;
+    color: #ffffff;
+    border: none;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+    transition: background-color 0.2s ease;
+}
+
+.sf-submit-btn:hover {
+    background-color: #015ba6;
+}
+
+.sf-btn-arrow {
+    width: 18px;
+    height: 18px;
+}
+
+/* SSO / Federated Divider rules */
+.sf-divider {
+    position: relative;
+    text-align: center;
+    margin: 32px 0 24px 0;
+}
+
+.sf-divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e7eb;
+    z-index: 1;
+}
+
+.sf-divider-text {
+    position: relative;
+    background-color: #ffffff;
+    padding: 0 12px;
+    font-size: 13px;
+    color: #969492;
+    z-index: 2;
+}
+
+/* SSO Buttons layout */
+.sf-sso-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.sf-sso-btn {
+    width: 64px;
+    height: 48px;
+    background-color: #ffffff;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    transition: all 0.2s ease;
+}
+
+.sf-sso-btn:hover {
+    border-color: #cbd5e1;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.sso-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+/* Lower Footer Text components */
+.sf-form-footer {
+    text-align: center;
+    margin-top: 26px;
+    font-size: 13px;
+    color: #686b6d;
+}
+
+.sf-admin-link {
+    color: #0176d3;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sf-admin-link:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================================================================
+   RIGHT PANEL - ILLUSTRATED BRAND HERO SECTION
+   ========================================================================== */
+.sf-hero-section {
+    /* flex-content: space-between;
+    flex: 1;
+    height: 100%;
+    position: relative; */
+    /* background: linear-gradient(180deg, #d8edfe 0%, #b3defc 100%); */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px; */
+
+
+    flex: 1;
+    height: 100%;
+    position: relative; /* Crucial: Allows the image to align to this container's edges */
+    overflow: hidden;   /* Keeps the image perfectly clipped inside the rounded corners/screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+.sf-hero-text-content {
+    max-width: 500px;
+    z-index: 3;
+}
+
+.sf-hero-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #032d60;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+}
+
+.sparkle-emoji {
+    color: #ffb800;
+}
+
+.sf-hero-subtitle {
+    font-size: 18px;
+    color: #032d60;
+    opacity: 0.85;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Scenic artboard asset fallback containment area */
+.sf-graphic-artboard {
+    /* position: relative; */
+    /* position: absolute;
+    object-fit: cover;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    z-index: 1; */
+    /* pointer-events: none; */
+    position: absolute; /* Forces the wrapper to break free from container padding */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.sf-graphic-artboard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Scale and crop the image perfectly to fill the space without stretching */
+    object-position: center right; /* Keeps Astro centered/right-aligned if the screen shrinks */
+    object-position: 25% center;
+}
+
+.sf-hero-scenery-fallback {
+    /* width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom right; */
+    /* opacity: 0.15; Clean abstract blending texture if default unsplash background is present */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Scale and crop the image perfectly to fill the space without stretching */
+    object-position: center right;
+    object-position: 45% center;
+}
+
+/* System Security Information Card Capsule Lower Right */
+.sf-security-badge {
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 12px 24px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 20px rgba(3, 45, 96, 0.06);
+    z-index: 3;
+    margin-bottom: -10px;
+}
+
+.badge-shield-icon {
+    width: 18px;
+    height: 18px;
+    color: #0176d3;
+}
+
+.badge-text {
+    font-size: 13px;
+    font-weight: 500;
+    color: #032d60;
+}
+
+/* Responsive constraints handling mobile presentation breakpoints */
+@media (max-width: 1024px) {
+    .sf-hero-section {
+        display: none;
+    }
+    .sf-form-section {
+        width: 100%;
+        min-width: 100%;
+        border-radius: 0;
+    }
+}

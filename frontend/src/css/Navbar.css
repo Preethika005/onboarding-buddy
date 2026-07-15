@@ -1,0 +1,163 @@
+.navbar{
+
+    height:80px;
+
+    margin-left:260px;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 35px;
+
+    box-shadow:0 5px 25px rgba(0,0,0,.06);
+
+}
+
+.searchBox{
+
+    width:420px;
+
+    background:#f4f7fc;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:14px 18px;
+
+    border-radius:30px;
+
+}
+
+.searchBox input{
+
+    width:100%;
+
+    border:none;
+
+    background:none;
+
+    outline:none;
+
+    margin-left:12px;
+
+    font-size:15px;
+
+}
+
+.searchIcon{
+
+    color:#888;
+
+}
+
+.navRight{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+}
+
+.iconBox{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:#f5f7fb;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+.iconBox:hover{
+
+    background:#0176d3;
+
+    color:white;
+
+}
+
+.badge{
+
+    position:absolute;
+
+    top:-4px;
+
+    right:-4px;
+
+    background:red;
+
+    color:white;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:10px;
+
+}
+
+.profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.profile img{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+}
+
+.profile h4{
+
+    margin:0;
+
+}
+
+.profile p{
+
+    margin:0;
+
+    color:gray;
+
+    font-size:13px;
+
+}
