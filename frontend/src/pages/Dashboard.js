@@ -126,6 +126,13 @@ const Dashboard = () => {
             </div> */}
 
             {/* Main Action Button */}
+            {/* <button type="submit" className="sf-submit-btn">
+              <span>Log In</span>
+              <svg className="sf-btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </button> */}
             <button type="submit" className="sf-submit-btn">
               <span>Log In</span>
               <svg className="sf-btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -133,6 +140,20 @@ const Dashboard = () => {
                 <polyline points="12 5 19 12 12 19" />
               </svg>
             </button>
+
+            <div className="signup-section">
+              <p>
+                New HR?
+                <span
+                  className="signup-link"
+                  onClick={() => navigate("/signup")}
+                >
+                  Sign Up
+                </span>
+              </p>
+            </div>
+
+            
           </form>
 
           {/* Social / Single Sign-On Divider */}
